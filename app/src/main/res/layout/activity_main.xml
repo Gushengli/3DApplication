@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
+    <FrameLayout
+        android:id="@+id/fl_mainactivity"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <RadioGroup
+        android:id="@+id/main_bottom_rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/black"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/main_bottom_rb01"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="文章"
+            android:layout_weight="1"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:drawableTop="@drawable/main_bottom_drawabletop_chapter"
+            android:clickable="true"
+            android:checked="true"
+            android:textSize="16sp"
+            android:button="@null"/>
+
+        <RadioButton
+            android:id="@+id/main_bottom_rb02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="论坛"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:drawableTop="@drawable/main_bottom_drawabletop_forum"
+            android:textSize="16sp"
+            android:button="@null"/>
+
+
+        <RadioButton
+            android:id="@+id/main_bottom_rb03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="游戏"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:drawableTop="@drawable/main_bottom_drawabletop_game"
+            android:textSize="16sp"
+            android:button="@null"/>
+    </RadioGroup>
+</LinearLayout>

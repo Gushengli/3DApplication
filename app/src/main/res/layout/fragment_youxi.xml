@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include
+        android:id="@+id/title_youxi"
+        layout="@layout/selfview_toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/banner_bg">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="按照游戏类型查找"
+                android:textSize="17sp"/>
+
+            <Spinner
+                android:id="@+id/spinnerself"
+                android:layout_width="100dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="20dp"
+                android:layout_alignTop="@+id/tv_spinner"
+                android:layout_toEndOf="@+id/tv_spinner"
+                android:layout_toRightOf="@+id/tv_spinner"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/forfragment_youxi"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
